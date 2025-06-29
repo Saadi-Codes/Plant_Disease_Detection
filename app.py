@@ -59,5 +59,4 @@ interface = gr.Interface(
     description="Upload an image of a plant leaf to identify possible disease."
 )
 
-if __name__ == "__main__":
-    interface.launch()
+interface.launch()
