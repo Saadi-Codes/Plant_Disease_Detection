@@ -46,7 +46,8 @@ Plant Disease Detection/
 
 ## Access Link
 
-link : https://huggingface.co/spaces/Saadi-Codes-22/Plant_Disease_Detection
+github : https://github.com/Saadi-Codes/Plant_Disease_Detection
+huggingface [app deployed] : https://huggingface.co/spaces/Saadi-Codes-22/Plant_Disease_Detection
 [use the provided test images placed in test folder for better results as this model is trained only on 10 epochs.]
 
 ## Dataset Info
