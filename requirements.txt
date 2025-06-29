@@ -7,5 +7,5 @@ pillow
 matplotlib
 seaborn
 scikit-learn
-gradio==4.24.0
+gradio==3.50.2
 numpy
