@@ -32,12 +32,23 @@ class_names = [
 ]
 
 def predict(img):
-    image = img.resize((128, 128))
-    image = tf.keras.preprocessing.image.img_to_array(image)
-    image = np.expand_dims(image, axis=0)
-    predictions = model.predict(image)
-    index = np.argmax(predictions)
-    return f"🌿 Prediction: Image consist of a {class_names[index]} leaf"
+    try:
+        print("📸 Image received.")
+        image = img.resize((128, 128))
+        image = tf.keras.preprocessing.image.img_to_array(image)
+        image = np.expand_dims(image, axis=0)
+        print("🔍 Image preprocessed.")
+
+        predictions = model.predict(image)
+        print(f"📊 Predictions: {predictions}")
+
+        index = np.argmax(predictions)
+        print(f"✅ Predicted class index: {index}")
+        return f"🌿 Prediction: Image consists of a {class_names[index]} leaf"
+
+    except Exception as e:
+        print(f"❌ Error: {e}")
+        return "Something went wrong. Please try again."
 
 # Gradio Interface
 interface = gr.Interface(
