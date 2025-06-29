@@ -1,0 +1,11 @@
+# requirements.txt
+
+streamlit
+tensorflow
+numpy
+pillow
+matplotlib
+seaborn
+scikit-learn
+gradio==4.24.0
+numpy
