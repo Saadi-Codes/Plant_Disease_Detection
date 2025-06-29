@@ -6,7 +6,7 @@ import os
 import requests
 
 # Loaded trained model
-MODEL_URL = "https://huggingface.co/Saadi-Codes-22/plant-disease-model/blob/main/trained_model.keras"
+MODEL_URL = "https://huggingface.co/Saadi-Codes-22/plant-disease-model/resolve/main/trained_model.keras"
 MODEL_PATH = "trained_model.keras"
 
 if not os.path.exists(MODEL_PATH):
